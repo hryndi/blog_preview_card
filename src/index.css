@@ -1,19 +1,113 @@
 :root {
-  font-family: "Figtree", sans-serif, system-ui, Avenir, Helvetica, Arial;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Figtree", sans-serif, Inter, system-ui, Avenir, Helvetica, Arial;
   font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 1.5;
   font-style: normal;
+  width: 100%;
 }
-html,
+
 body,
+html {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  background-color: hsl(47, 89%, 63%);
+}
+
 #root {
   width: 100%;
   height: 100%;
-  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+main {
+  max-width: 24rem;
+  max-height: 60rem;
+  border: rgb(0, 0, 0) 1px solid;
+  box-shadow: 8px 8px 0px 1px rgba(1, 0, 3, 0.87);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
+  min-width: 0;
+}
+
+main:hover h2 {
+  color: hsl(47, 88%, 63%);
+}
+
+.prev-image > img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.content-wraper {
+  width: 100%;
+}
+
+.tag-name {
+  width: 5rem;
+
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  display: inline-block;
+  background-color: hsl(48, 86%, 63%);
+  margin-top: 1rem;
+  padding: 0.25rem;
+}
+
+.public-date {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.content-wraper > h2 {
+  margin-top: 0.7rem;
+}
+
+.description {
+  margin-top: 0.9rem;
+}
+
+.author {
+  margin-top: 1.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.author img {
+  width: 1.8rem;
+}
+.author h5 {
+  padding-left: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+@media all and (max-width: 500px) {
+  main {
+    padding: 1rem;
+  }
 }
