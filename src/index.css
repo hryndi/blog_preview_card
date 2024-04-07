@@ -87,6 +87,7 @@ main:hover h2 {
 
 .description {
   margin-top: 0.9rem;
+  color: hsl(0, 0%, 50%);
 }
 
 .author {
